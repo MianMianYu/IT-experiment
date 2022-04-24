@@ -1,0 +1,12 @@
+int cz(int i)
+{
+    int c = i;
+    for(; q[c] >= 0; c = q[c]);
+    while(c != i)
+    {
+        int t = q[i];
+        q[i] = c;
+        i = t;
+    }
+    return c;
+}
