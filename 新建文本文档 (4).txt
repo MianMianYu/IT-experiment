@@ -1,0 +1,16 @@
+void jh(int a, int b)
+{
+    int f1 = cz(a);
+    int f2 = cz(b);
+    int t = q[f1] + q[f2];
+    if(q[f1] > q[f2])
+    {
+        q[f1] = f2;
+        q[f2] = t;
+    }
+    else
+    {
+        q[f2] = f1;
+        q[f1] = t;
+    }
+}
