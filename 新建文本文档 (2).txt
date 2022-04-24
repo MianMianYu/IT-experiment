@@ -1,0 +1,6 @@
+int cmp(const void *a, const void *b)
+{
+    Sj *aa = (Sj*)a;
+    Sj *bb = (Sj*)b;
+    return aa->w > bb->w ? 1:-1;
+}
